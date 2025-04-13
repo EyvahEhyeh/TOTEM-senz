@@ -21,7 +21,7 @@ layers:
   - {t: K, h: RGUI}
   - {t: L, h: RALT}
   - {t: '''', h: RSHFT}
-  - ''
+  - B
   - Z
   - X
   - C
