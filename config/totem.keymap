@@ -92,17 +92,17 @@
        &kp Q         &kp W        &kp E        &kp R         &kp T    &kp Y  &kp U         &kp I            &kp O        &kp P
        &hml LSHFT A  &hml LALT S  &hml LGUI D  &hml LCTRL F  &kp G    &kp H  &hmr RCTRL J  &hmr RGUI K      &hmr RALT L  &hmr RSHFT SQT
 &kp B  &kp Z         &kp X        &kp C        &kp V         &kp B    &kp N  &kp M         &kp COMMA        &kp DOT      &kp SLASH       &none
-                                  &lt 1 ESC    &lt 1 SPACE   &none    &none  &lt 2 SPACE   &lt 2 BACKSPACE
+                                  &lt 1 ESC    &lt 2 SPACE   &to 3    &none  &lt 3 SPACE   &lt 3 BACKSPACE
             >;
         };
 
         Sym {
             label = "Sym";
             bindings = <
-        &kp EXCLAMATION  &kp AT             &kp POUND              &kp SEMICOLON  &kp LBRC    &kp EQUAL      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp N0
-        &kp LEFT_SHIFT   &kp GRAVE          &trans                 &kp COLON      &kp LBKT    &kp MINUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
-&trans  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp TILDE      &kp LPAR    &kp BACKSLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-                                            &trans                 &kp ENTER      &trans      &trans         &kp TAB       &trans
+       &kp EXCLAMATION  &kp AT             &kp POUND              &kp SEMICOLON  &kp LBRC    &kp EQUAL      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp N0
+       &kp LEFT_SHIFT   &kp GRAVE          &trans                 &kp COLON      &kp LBKT    &kp MINUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &bt BT_CLR_ALL
+&to 0  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp TILDE      &kp LPAR    &kp BACKSLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans          &bootloader
+                                           &trans                 &kp ENTER      &trans      &trans         &kp TAB       &trans
             >;
         };
 
@@ -118,10 +118,10 @@
 
         Tune {
             bindings = <
-             &bt BT_CLR  &none  &none   &none   &bt BT_SEL 0    &kp C_VOL_UP  &none       &none             &none       &none
-             &none       &none  &none   &none   &bt BT_SEL 1    &kp K_MUTE    &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT  &none
-&bootloader  &none       &none  &none   &none   &bt BT_SEL 2    &kp C_VOL_DN  &none       &none             &none       &none  &bootloader
-                                &trans  &trans  &trans          &trans        &trans      &trans
+        &bt BT_CLR  &none  &none   &none   &bt BT_SEL 0    &kp C_VOL_UP  &none       &none             &none       &none
+        &none       &none  &none   &none   &bt BT_SEL 1    &kp K_MUTE    &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT  &none
+&trans  &none       &none  &none   &none   &bt BT_SEL 2    &kp C_VOL_DN  &none       &none             &none       &none  &bootloader
+                           &trans  &trans  &trans          &trans        &trans      &trans
             >;
 
             label = "Tune";

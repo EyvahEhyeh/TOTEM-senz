@@ -34,11 +34,11 @@ layers:
   - /
   - ''
   - {t: ESC, h: Sym}
-  - {t: SPACE, h: Sym}
-  - ''
-  - ''
   - {t: SPACE, h: Nav}
-  - {t: BACKSPACE, h: Nav}
+  - {t: Tune, h: toggle}
+  - ''
+  - {t: SPACE, h: Tune}
+  - {t: BACKSPACE, h: Tune}
   Sym:
   - '!'
   - '@'
@@ -59,8 +59,8 @@ layers:
   - '4'
   - '5'
   - '6'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BT CLR ALL
+  - {t: Base, h: toggle}
   - '}'
   - ']'
   - )
@@ -71,7 +71,7 @@ layers:
   - '2'
   - '3'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&bootloader'
   - {type: held}
   - ENTER
   - {t: ▽, type: trans}
@@ -112,10 +112,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ENTER
+  - {t: ENTER, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: TAB, type: held}
+  - TAB
   - {t: ▽, type: trans}
   Tune:
   - BT CLR
@@ -138,7 +138,7 @@ layers:
   - PLAY PAUSE
   - NEXT
   - ''
-  - '&bootloader'
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -150,7 +150,7 @@ layers:
   - ''
   - ''
   - '&bootloader'
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
